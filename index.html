@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phaneendra B — Staff Backend Engineer & Technical Architect</title>
+<meta name="description" content="Staff Backend Engineer & Technical Architect with 14+ years designing production-grade distributed systems and AI orchestration engines.">
+<meta property="og:title" content="Phaneendra B — Staff Backend Engineer & Technical Architect">
+<meta property="og:description" content="14+ years designing production-grade distributed systems & AI orchestration engines.">
+<meta property="og:image" content="https://bphanib.github.io/assets/profile.jpg">
+<link rel="icon" href="assets/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  (function(){var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t;})();
+</script>
+<style>
+  :root{
+    --bg:#f7f8fa;--bg-elev:#ffffff;--bg-sub:#eef1f5;
+    --fg:#0f172a;--fg-muted:#475569;--fg-faint:#94a3b8;
+    --border:#e2e8f0;--accent:#2563eb;--accent-soft:#dbeafe;--accent-2:#7c3aed;
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px -12px rgba(15,23,42,.12);
+    --glow:radial-gradient(600px 300px at 20% 0%,rgba(37,99,235,.10),transparent 60%),radial-gradient(500px 300px at 80% 10%,rgba(124,58,237,.08),transparent 60%);
+  }
+  [data-theme="dark"]{
+    --bg:#0b0f17;--bg-elev:#111827;--bg-sub:#161e2e;
+    --fg:#e5e7eb;--fg-muted:#9ca3af;--fg-faint:#6b7280;
+    --border:#1f2937;--accent:#60a5fa;--accent-soft:#1e3a5f;--accent-2:#a78bfa;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
+    --glow:radial-gradient(600px 300px at 20% 0%,rgba(96,165,250,.14),transparent 60%),radial-gradient(500px 300px at 80% 10%,rgba(167,139,250,.12),transparent 60%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  body::before{content:"";position:fixed;inset:0;background:var(--glow);pointer-events:none;z-index:0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+  .wrap{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 24px 80px}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--border)}
+  .nav-in{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-weight:700;letter-spacing:-.01em;color:var(--fg)}
+  .brand span{color:var(--accent)}
+  .nav-links{display:flex;gap:22px;font-size:14px;font-weight:500}
+  .nav-links a{color:var(--fg-muted)}
+  .nav-links a:hover{color:var(--fg);text-decoration:none}
+  @media(max-width:720px){.nav-links{display:none}}
+  .toggle{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--fg);cursor:pointer;transition:transform .15s,background .3s}
+  .toggle:hover{transform:translateY(-1px)}
+  .toggle svg{width:18px;height:18px}
+  [data-theme="dark"] .sun{display:none}
+  [data-theme="light"] .moon{display:none}
+
+  /* Hero */
+  .hero{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding:72px 0 56px}
+  @media(max-width:720px){.hero{grid-template-columns:1fr;text-align:center;justify-items:center;padding-top:48px}}
+  .avatar{position:relative;width:180px;height:180px;flex-shrink:0}
+  .avatar::before{content:"";position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(from 180deg,var(--accent),var(--accent-2),var(--accent));filter:blur(.5px)}
+  .avatar img{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;border:4px solid var(--bg);display:block}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:6px 12px;border-radius:999px;margin-bottom:16px}
+  .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.25)}
+  h1{font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:12px}
+  .title{font-size:clamp(17px,2.2vw,21px);font-weight:500;color:var(--fg-muted);margin-bottom:20px}
+  .title b{color:var(--fg);font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:14px;color:var(--fg-muted)}
+  @media(max-width:720px){.meta{justify-content:center}}
+  .meta a{display:inline-flex;align-items:center;gap:6px;color:var(--fg-muted)}
+  .meta a:hover{color:var(--accent);text-decoration:none}
+  .meta svg{width:16px;height:16px;opacity:.8}
+
+  /* Stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 64px}
+  @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--bg-elev);border:1px solid var(--border);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+  .stat .n{font-size:28px;font-weight:800;letter-spacing:-.02em;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .l{font-size:13px;color:var(--fg-muted);margin-top:2px}
+
+  /* Sections */
+  section{margin-bottom:64px;scroll-margin-top:80px}
+  h2{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-faint);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+  h2::after{content:"";flex:1;height:1px;background:var(--border)}
+  .lead{font-size:17px;color:var(--fg-muted);max-width:820px}
+  .lead b{color:var(--fg);font-weight:600}
+
+  /* Highlights */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .card{background:var(--bg-elev);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
+  .card:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .card .ic{width:40px;height:40px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;margin-bottom:14px}
+  .card .ic svg{width:20px;height:20px}
+  .card h3{font-size:16px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--fg-muted)}
+  .card p b{color:var(--fg);font-weight:600}
+
+  /* Skills */
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .skill{background:var(--bg-elev);border:1px solid var(--border);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+  .skill h3{font-size:13px;font-weight:600;color:var(--fg-muted);margin-bottom:12px}
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .tag{font-family:"JetBrains Mono",monospace;font-size:12.5px;padding:5px 10px;border-radius:8px;background:var(--bg-sub);border:1px solid var(--border);color:var(--fg)}
+  .tag.hi{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:500}
+
+  /* Timeline */
+  .tl{position:relative;padding-left:28px}
+  .tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--accent),var(--accent-2),var(--border))}
+  .job{position:relative;margin-bottom:36px}
+  .job::before{content:"";position:absolute;left:-26px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+  .job-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;margin-bottom:4px}
+  .job h3{font-size:18px;font-weight:700;letter-spacing:-.01em}
+  .job .co{color:var(--accent);font-weight:600}
+  .job .when{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--fg-faint);white-space:nowrap}
+  .job .proj{font-size:13.5px;color:var(--fg-muted);margin-bottom:12px}
+  .job .proj b{color:var(--fg);font-weight:500}
+  .job ul{list-style:none;display:grid;gap:8px}
+  .job li{font-size:14.5px;color:var(--fg-muted);padding-left:18px;position:relative}
+  .job li::before{content:"▸";position:absolute;left:0;color:var(--accent);font-size:12px;top:2px}
+  .job li b{color:var(--fg);font-weight:600}
+
+  /* Edu / footer */
+  .edu{background:var(--bg-elev);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow);display:flex;gap:16px;align-items:center}
+  .edu .ic{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex-shrink:0}
+  .edu .ic svg{width:22px;height:22px}
+  .edu h3{font-size:16px;font-weight:700}
+  .edu p{font-size:14px;color:var(--fg-muted)}
+  .cta{text-align:center;padding:48px 24px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(135deg,var(--bg-elev),var(--bg-sub));box-shadow:var(--shadow)}
+  .cta h2{display:block;font-size:26px;font-weight:800;letter-spacing:-.02em;text-transform:none;color:var(--fg);margin-bottom:8px}
+  .cta h2::after{display:none}
+  .cta p{color:var(--fg-muted);margin-bottom:22px}
+  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:600;font-size:14px;border:1px solid var(--border);background:var(--bg-elev);color:var(--fg);transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);text-decoration:none;box-shadow:var(--shadow)}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-color:transparent}
+  .btn svg{width:16px;height:16px}
+  footer{text-align:center;font-size:13px;color:var(--fg-faint);margin-top:48px}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#">phaneendra<span>.b</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#highlights">Highlights</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </div>
+    <button class="toggle" id="toggle" aria-label="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="avatar"><img src="assets/profile.jpg" alt="Phaneendra B"></div>
+    <div>
+      <div class="eyebrow">Open to Staff / Architect roles</div>
+      <h1>Phaneendra B</h1>
+      <p class="title"><b>Staff Backend Engineer</b> &middot; <b>Technical Architect</b><br>14+ years designing production-grade distributed systems &amp; AI orchestration engines</p>
+      <div class="meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;vertical-align:-3px;margin-right:4px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Bengaluru, India</span>
+        <a href="mailto:phani.2026@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>phani.2026@gmail.com</a>
+        <a href="https://linkedin.com/in/bphane" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7c0-1-.8-1.7-1.8-1.7z"/></svg>LinkedIn</a>
+        <a href="https://github.com/bphanib" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="n">14+</div><div class="l">Years of experience</div></div>
+    <div class="stat"><div class="n">10K+</div><div class="l">Concurrent media tasks / day</div></div>
+    <div class="stat"><div class="n">99.99%</div><div class="l">Service availability baseline</div></div>
+    <div class="stat"><div class="n">#1</div><div class="l">Product Hunt, Golden Kitty 2023</div></div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">Strategic, hands-on backend engineer and architect focused on high-throughput <b>microservices architectures</b> and <b>fault-tolerant distributed systems</b> across enterprise product, banking, and AI orchestration platforms. I build stateful task execution layers, asynchronous job queues, and multi-agent topologies — balancing high availability, strict data consistency, and low-latency p99 profiles with modern <b>LLMOps &amp; FinOps</b> infrastructure, from initial architecture to global production scale.</p>
+  </section>
+
+  <section id="highlights">
+    <h2>Architecture Highlights</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
+        <h3>Award-Winning Infrastructure</h3>
+        <p>Designed the event-driven distributed infrastructure powering <b>Floik's</b> core engine — <b>#1 Product of the Day</b>, <b>#1 Product of the Week</b>, and Product Hunt's <b>2023 Golden Kitty Award</b>.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>High-Throughput Concurrency</h3>
+        <p>Scaled media processing pipelines to <b>10K+ concurrent records/day</b>, lowering p99 latency by <b>30%</b> via chunk-based processing, database routing, and bounded async concurrency loops.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="6" rx="1"/><rect x="14" y="15" width="8" height="6" rx="1"/><rect x="14" y="3" width="8" height="6" rx="1"/><path d="M10 6h4M6 9v9a3 3 0 0 0 3 3h5"/></svg></div>
+        <h3>Deterministic State Machines</h3>
+        <p>Fault-tolerant execution pipelines on <b>LangGraph</b> + <b>Temporal</b> with strict idempotency and stateful orchestration guaranteeing <b>100% state recovery</b> under traffic surges.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Secure Enterprise AI Gateways</h3>
+        <p>Production-grade <b>MCP servers</b> exposing core APIs as strongly-typed tools, enforcing <b>PII detection</b>, <b>prompt-injection defence</b>, and <b>Human-in-the-Loop</b> verification gates.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
+        <h3>Vector Indexing &amp; RAG</h3>
+        <p>Optimized distributed vector storage and RAG search, boosting autonomous task accuracy by <b>25%</b> with <b>Qdrant</b> partitioning, metadata filtering, and PostgreSQL analytics loops.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>LLMOps &amp; FinOps</h3>
+        <p>Multi-provider <b>model router &amp; fallback proxy</b> (OpenAI / Anthropic / Azure), <b>RedisVL semantic caching</b>, multi-tenant token budgeting, and token-bucket rate limiting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill"><h3>Architecture &amp; Core Design</h3><div class="tags">
+        <span class="tag hi">System Design</span><span class="tag hi">Microservices</span><span class="tag">Event-Driven</span><span class="tag">HA Distributed Systems</span><span class="tag">Fault-Tolerant Topology</span><span class="tag">Async Job Queues</span><span class="tag">Task Planners</span><span class="tag">DAG Engines</span><span class="tag">CAP Theorem</span>
+      </div></div>
+      <div class="skill"><h3>Enterprise AI &amp; Orchestration</h3><div class="tags">
+        <span class="tag hi">Agentic Systems</span><span class="tag hi">LangGraph</span><span class="tag hi">MCP</span><span class="tag">Multi-Agent Topologies</span><span class="tag">Memory Engineering</span><span class="tag">LlamaIndex</span><span class="tag">LangChain</span><span class="tag">Temporal</span>
+      </div></div>
+      <div class="skill"><h3>LLMOps &amp; FinOps</h3><div class="tags">
+        <span class="tag">Model Routers</span><span class="tag">Fallback Proxies</span><span class="tag">Semantic Caching (RedisVL)</span><span class="tag">Context Window Optimization</span><span class="tag">Token Budgeting</span><span class="tag">Rate Limiting</span><span class="tag">Ragas Evals</span>
+      </div></div>
+      <div class="skill"><h3>Languages &amp; Frameworks</h3><div class="tags">
+        <span class="tag hi">Java 8/17/21</span><span class="tag hi">Python</span><span class="tag hi">Spring Boot</span><span class="tag hi">FastAPI</span><span class="tag">React (TypeScript)</span>
+      </div></div>
+      <div class="skill"><h3>Data, Messaging &amp; Vector</h3><div class="tags">
+        <span class="tag hi">Apache Kafka</span><span class="tag hi">Qdrant</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">MySQL</span><span class="tag">Elasticsearch</span><span class="tag">ZMQ</span><span class="tag">CDC Pipelines</span>
+      </div></div>
+      <div class="skill"><h3>Cloud, DevOps &amp; Infrastructure</h3><div class="tags">
+        <span class="tag hi">AWS</span><span class="tag">EKS</span><span class="tag">Lambda</span><span class="tag">S3</span><span class="tag">MSK</span><span class="tag">EventBridge</span><span class="tag">KMS</span><span class="tag">MediaConvert</span><span class="tag">GCP</span><span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">SonarQube</span><span class="tag">JVM Profiling</span>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="tl">
+      <div class="job">
+        <div class="job-h"><h3>Technical Lead Architect / SDE-3 <span class="co">@ Kovai Systems</span></h3><span class="when">Nov 2024 — Present</span></div>
+        <p class="proj"><b>Floik</b>, <b>Document360 Integration</b> &middot; Kovai acquired Floik — same product &amp; team under a new parent company</p>
+        <ul>
+          <li>Led a team of <b>5 engineers</b> architecting a secure, distributed <b>Multi-Agent Topology</b> on Java, Python, FastAPI, Spring Boot, Kafka, and Temporal — stateful task planning, HITL verification gates, and deterministic workflow recovery.</li>
+          <li>Engineered enterprise <b>RAG &amp; ingestion</b> with recursive chunking and syntax-aware code parsing; hybrid <b>Dense (Qdrant) + Sparse (BM25)</b> retrieval fused via <b>Reciprocal Rank Fusion</b>, validated with Ragas.</li>
+          <li>Architected a real-time <b>CDC-driven</b> pipeline auto-embedding operational databases into partitioned Qdrant collections with strict data isolation and metadata filtering.</li>
+          <li>Maintained p99 latency baselines across <b>10K+ daily concurrent video tasks</b> via fine-tuned database routing and bounded parallel execution.</li>
+          <li>Unblocked frontend milestones by shipping crucial <b>React</b> application views during resource constraints.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-h"><h3>Technical Lead Architect / SDE-3 <span class="co">@ Ping Technologies</span></h3><span class="when">Jan 2022 — Nov 2024</span></div>
+        <p class="proj"><b>Floik</b> — storytelling platform generating interactive product demos, videos, and step-by-step guides</p>
+        <ul>
+          <li>Core platform &amp; HA architecture for Floik's launch — <b>2023 Golden Kitty Award</b>, <b>#1 Product of the Day/Week</b>.</li>
+          <li>Architected an <b>LLMOps Model Router &amp; Fallback proxy</b> across OpenAI / Anthropic / Azure with <b>RedisVL semantic caching</b> — instant failover and sharply reduced token spend.</li>
+          <li>Built secure REST gateways with <b>FinOps cost allocation</b>, multi-tenant token tracking, context-window trimming, and token-bucket rate limiting.</li>
+          <li>Guaranteed <b>99.99% availability</b> with CAP-anchored event-driven microservices, failure-isolation zones, and idempotency patterns.</li>
+          <li>Deep <b>JVM profiling &amp; GC tuning</b> to eliminate memory leaks, CPU saturation, and latency bottlenecks.</li>
+          <li>Event-driven AWS pipelines (Lambda, Step Functions, EventBridge, Kafka) with DLQs, retries, and distributed tracing; CI/CD on EKS, Jenkins, GitHub Actions, SonarQube.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-h"><h3>Software Developer → SDE-3 / Senior Backend Developer <span class="co">@ Razorthink</span></h3><span class="when">Jun 2012 — Jan 2022</span></div>
+        <p class="proj"><b>Razorthink aiOS</b>, FormAI, Customer Churn, Next Best Product, Demand Forecasting, Adonme, Anounze, Guest Verification Portal, Incident Management System, OurUpgrade, SafelyStay</p>
+        <ul>
+          <li>Directed data validation, analysis, and preprocessing architecture for <b>banking-sector</b> churn, forecasting, and next-best-product initiatives.</li>
+          <li>Designed a multi-module, large-scale <b>batch + real-time</b> data processing engine and AI platform with automated DAG infrastructure and ingestion task planners.</li>
+          <li>Java performance tuning and JVM profiling across concurrency, multithreading, and GC to resolve CPU, memory, and latency bottlenecks.</li>
+          <li>Rigorous code quality via JUnit, Mockito, and contract testing layers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p>Sri Sivani College of Engineering, JNTU-Kakinada &middot; 2007 – 2011</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="cta">
+      <h2>Let's build something resilient.</h2>
+      <p>Open to Staff Engineer and Architect roles in distributed systems &amp; AI infrastructure.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:phani.2026@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>Email me</a>
+        <a class="btn" href="https://linkedin.com/in/bphane" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://bold.pro/my/phaneendra" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© <span id="y"></span> Phaneendra B &middot; Bengaluru, India</footer>
+</div>
+
+<script>
+  document.getElementById('y').textContent=new Date().getFullYear();
+  document.getElementById('toggle').addEventListener('click',()=>{
+    const r=document.documentElement,t=r.dataset.theme==='dark'?'light':'dark';
+    r.dataset.theme=t;localStorage.setItem('theme',t);
+  });
+</script>
+</body>
+</html>
